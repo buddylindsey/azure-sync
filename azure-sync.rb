@@ -59,4 +59,7 @@ if final_files.size > 0 then
   final_files.each do |f|
     container.store(f, File.open(f), file_type(f))
   end
+  puts 'save was successful'
+else
+  puts 'no files to save'
 end

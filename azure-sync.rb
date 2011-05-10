@@ -49,6 +49,8 @@ intersection = azure_files & local_files
 final_files = local_files - intersection
 final_files.delete("azure-sync.rb")
 final_files.delete("README")
+final_files.delete("Gemfile")
+final_files.delete("Gemfile.lock")
 
 # 
 # Uploads the new files to azure
